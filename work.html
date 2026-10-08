@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Work | Syed Shakib Shahriar Islam</title>
+<meta name="description" content="Research and projects by Syed Shakib Shahriar Islam: sEMG prosthetic control, edge AI, computer vision, EVs and energy optimization.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="w"><b><a href="index.html">Shakib Shahriar</a></b>
+<nav aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="work.html" aria-current="page">Work</a><a href="journey.html">Journey</a><a href="beyond.html">Beyond</a><a href="contact.html">Contact</a></nav></div></header>
+<main id="main"><div class="w">
+<div class="page-hero"><p class="eyebrow">Work</p><h1>Research and projects</h1><p class="sub">The main research first, then publications, then the things I have built.</p></div>
+
+<section id="research" style="padding-top:3rem"><h2>Research</h2>
+<h3>Development and Able-Bodied Validation of a Resource-Efficient Three-Sensor sEMG Prosthetic Arm Prototype Using Edge-Deployed Deep Learning</h3>
+<p>My undergraduate thesis: a low-cost, 3D-printed trans-radial prosthetic arm controlled by three surface EMG channels. A 1D-CNN classifies six hand gestures and runs directly on an ESP32-S3.</p>
+<div class="keyres">About 18.5 ms inference and control latency on ESP32-S3<span>Accuracy and F1 results: [PLACEHOLDER, add once you share the numbers]</span></div>
+<div class="feature" style="align-items:start">
+<div>
+<h3>Focus</h3>
+<ul class="focus-list"><li>sEMG-based gesture recognition</li><li>Minimal sensor configuration</li><li>1D-CNN and edge deployment</li><li>ESP32-S3 and prosthetic control</li></ul>
+<h3>Method</h3>
+<p style="color:var(--mute)">GRABMyo-based channel analysis and sensor selection, sEMG acquisition, preprocessing, gesture classification, model training, embedded deployment and real-time validation.</p>
+<h3>Hardware</h3>
+<p style="color:var(--mute)">Three EMG V3 sensors, ESP32-S3, PCA9685, MG996R and SG90 servos, a 3S 11.1 V LiPo battery and a 3D-printed hand.</p>
+<p><a class="link-arrow" href="https://github.com/itsshakibshahriar/semg-prosthetic-arm">Code and firmware on GitHub</a></p>
+</div>
+<figure class="shot" role="img" aria-label="Prototype photo placeholder">[PHOTO: prosthetic arm prototype]</figure>
+</div>
+<p style="margin-top:1.5rem"><strong>Manuscript.</strong> S. S. S. Islam, M. R. Hasan, M. Moznuzzaman. In preparation for <em>PLOS ONE</em>. Not yet published.</p>
+</section>
+
+<section id="publications"><h2>Publications</h2>
+<div class="pub"><h3>Privacy Preserving Federated Learning for Early Student Dropout Prediction</h3>
+<p class="meta">M. S. Basunia, <strong>S. S. S. Islam</strong>, et al. <em>2026 IEEE 5th RAAICON.</em></p></div>
+</section>
+
+<section id="projects"><h2>Projects</h2>
+<article class="card-big">
+<div><div class="type" style="font-size:.85rem;color:var(--accink);font-weight:600;margin-bottom:.6rem">AI, computer vision, intelligent transportation</div>
+<h3>LimitEye</h3>
+<p>A third-year project. A custom YOLOv8 model, annotated with LabelImg and trained on Google Colab, detects vehicles and license plates. SORT tracking gives each vehicle an ID, speed comes from pixel-to-distance conversion, and a violation triggers an automated e-fine by email.</p>
+<ul class="tags"><li>YOLOv8</li><li>SORT</li><li>Python</li><li>Google Colab</li></ul>
+<a class="link-arrow" href="https://github.com/itsshakibshahriar/limiteye-vehicle-speed-detection">View details</a></div>
+<figure class="shot" role="img" aria-label="LimitEye screenshot placeholder">[IMAGE: LimitEye detection screenshot]</figure>
+</article>
+<article class="card-big">
+<div><div class="type" style="font-size:.85rem;color:var(--accink);font-weight:600;margin-bottom:.6rem">EV, energy recovery, embedded systems</div>
+<h3>Regenerative braking for electric wheelchairs</h3>
+<p>A concept that returns braking energy to a 24 V battery pack, with ultrasonic and MPU6050 safety sensing. A Python model estimates 5 to 10% direct energy recovery. Presented as a poster at a symposium on energy security and fuel optimization.</p>
+<ul class="tags"><li>Arduino/ESP32</li><li>MPU6050</li><li>Python</li></ul></div>
+<figure class="shot" role="img" aria-label="Poster placeholder">[IMAGE: symposium poster]</figure>
+</article>
+<div class="proj-grid">
+<article class="card"><div class="type">Energy optimization, industrial engineering</div><h3>Industrial energy audit</h3><p>An on-site audit of Asian Marble Industries, a 118,603 sq ft facility using 22,771 kWh a month. Power factor improvement and LED retrofitting were projected to cut electricity costs by 10 to 15%.</p></article>
+<article class="card"><div class="type">Control systems</div><h3>PID control of a DC motor</h3><p>Closed-loop speed control on an Arduino with a motor driver, tuned until overshoot dropped and steady-state error flattened.</p><a href="https://github.com/itsshakibshahriar/embedded-lab-projects">View details</a></article>
+<article class="card"><div class="type">Embedded systems, PID control</div><h3>Line follower robot</h3><p>A group project using a QTR-8RC IR sensor array and PID on an Arduino Nano, with an L298N driver, N20 motors and an HC-SR04 sonar.</p><a href="https://github.com/itsshakibshahriar/embedded-lab-projects">View details</a></article>
+<article class="card"><div class="type">Embedded systems, electrical protection</div><h3>Overvoltage protection circuit</h3><p>An Arduino Nano reads AC voltage through a ZMPT101B sensor and trips a 5V relay to isolate the load during surges, with an I2C LCD for live status.</p><a href="https://github.com/itsshakibshahriar/embedded-lab-projects">View details</a></article>
+</div>
+</section>
+<section><p><a class="link-arrow" href="journey.html">Follow my journey</a></p></section>
+</div></main>
+<footer><div class="w">Syed Shakib Shahriar Islam. Electrical and Electronic Engineering, Bangladesh.</div></footer>
+</body>
+</html>
